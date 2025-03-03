@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t-shirt Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+<section class="product1">
+    <h2>Very awesome and totally not generic t-shirt!</h2>
+
+    <section class="product1__image">
+        <img src="images/black-front.png" alt="" >
+    </section>
+
+    <section class="product1__colors">
+        <button onclick="changeToBlack()" class="product1__color product1__color--black">Sort</button>
+        <button onclick="changeToWhite()" class="product1__color product1__color--white">Hvid</button>
+    </section>
+
+    <section class="product1__sizes">
+        <button onclick="sizeS()" class="product1__size--s">Small</button>
+        <button onclick="sizeM()" class="product1__size--m">Medium</button>
+        <button onclick="sizeL()" class="product1__size--l">Large</button>
+    </section>
+
+    <section class="product1__size--highlight">
+        <p>Størrelse:</p>
+        <p><span class="sizeText">Small</span></p>
+    </section>
+
+
+    <section>
+        <p class="product1__price"><span class="priceTag">100</span> kr.</p>
+    </section>
+
+    <section>
+        <button class="product1__buyBtn">Køb NU</button>
+    </section>
+
+   <!-- <section class="antal">
+    <p>antal:</p> 
+    <input type="number">
+    </section>-->
+</section>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
