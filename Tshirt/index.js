@@ -15,7 +15,7 @@ let whiteButton = document.querySelector('.product1__color--white')
 let blackButton = document.querySelector('.product1__color--black')
 
 
-
+let productSizes = document.querySelector('.product1__sizes')
 let smallButton = document.querySelector('.product1__size--s')
 let medButton = document.querySelector('.product1__size--m')
 let largeButton = document.querySelector('.product1__size--l')
@@ -35,9 +35,9 @@ function changeToWhite() {
 
 let priceTag = document.querySelector('.priceTag')
 
-let colorBlack = querySelector('.product1__color--black')
+let colorBlack = document.querySelector('.product1__color--black')
 
-let colorWhite = querySelector('.product1__color--white')
+let colorWhite = document.querySelector('.product1__color--white')
 
 let sizeText = document.querySelector(".sizeText")
 
@@ -45,20 +45,22 @@ let sizeText = document.querySelector(".sizeText")
 
 function sizeS(){
     priceTag.innerText = 100
-    sizeText = "Small"
+    sizeText.innerText = "Small"
 }
 
 function sizeM(){
-    priceTag.innerText = 75,
-    sizeText == "Medium"
+    priceTag.innerText = 75
+    sizeText.innerText = "Medium"
 }
 
 function sizeL(){
     priceTag.innerText = 75
-    sizeText = "Large"
+    sizeText.innerText = "Large"
 }
 
 
-if (condition) {
-    
+if (colorBlack &&(productSizes === sizeM() || productSizes === sizeL())) {
+    priceTag.innerText = 75
+} else {
+    priceTag.innerText = 100
 }
